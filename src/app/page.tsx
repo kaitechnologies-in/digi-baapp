@@ -8,9 +8,6 @@ import NewsBlogs from './components/news_blogs'
 import Slider from './components/slider'
 import Trust from './components/trust'
 import Clients from './components/clients'
-// http://digibaapp.com/cpanel
-// Username: digibxyn 
-// Password: S2nA9Bi1^7#6
 export default function Home() {
   return (
     <main className="min-h-screen">
