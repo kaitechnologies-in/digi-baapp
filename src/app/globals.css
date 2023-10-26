@@ -2,10 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Phudu:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600&display=swap");
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  font-family: "Open Sans", sans-serif;
+  font-family: "Phudu", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,10 +24,152 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .logo {
+    max-width: max-content;
+  }
+
+  .brand-bg {
+    background: linear-gradient(180deg, #f60 0%, #dd240a 100%);
+  }
+
+  .dialog_bg {
+    background-image: url('./../../public/bg.jpg');
+  }
+
+  .loader-text {
+    color: #fff;
+    font-family: Phudu;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    position: absolute;
+    line-height: normal;
+    bottom: 50px;
+    text-transform: uppercase;
+  }
+
+
+  .menu {
+    color: #fff;
+    font-family: Phudu;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .navbar-tag {
+    color: #FFF;
+    font-family: Phudu;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+
+  .slider-main-text {
+    color: #2C2620;
+    font-family: Phudu;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  .slider-sub-text {
+    color: #2C2620;
+    font-family: Urbanist;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.92px;
+  }
+
+  .phudu-font {
+    font-family: Phudu;
+  }
+
+  .heading {
+    color: #F75603;
+    font-family: Phudu;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-shadow: 2px 2px #ffffff, 3px 3px #F75603;
+  }
+
+  .white-shadow {
+
+    text-shadow: 2px 2px #F75603, 3px 3px #ffffff;
+  }
+
+  .relative-image {
+    position: relative !important;
+  }
+
+  .work-image {
+    position: relative !important;
+    border-radius: 40px;
+    border: 1px solid #E9E9E9;
+  }
+
+  .view-project {
+    color: #F75603;
+    text-align: center;
+    font-family: Phudu;
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  .border-orange {
+    border-color: #F75603;
+  }
+
+  .bg-orange {
+    background: #F75603;
+  }
+
+  .bg-yellow{
+    background: #FFCC01;
+  }
+
+  .heading-service {
+    color: #F75603;
+    font-family: Phudu;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-shadow: 2px 2px #FFCC01, 3px 3px #F75603;
+  }
+
+  .bg-creamy {
+    background: #FFE39B;
+  }
 }

@@ -1,13 +1,48 @@
 import Image from 'next/image'
-
+import Work from './components/work'
+import Services from './components/services'
+import PrAndMedia from './components/pr_media'
+import About from './components/about'
+import Contact from './components/contact'
+import NewsBlogs from './components/news_blogs'
+import Slider from './components/slider'
+import Trust from './components/trust'
+import Clients from './components/clients'
+// http://digibaapp.com/cpanel
+// Username: digibxyn 
+// Password: S2nA9Bi1^7#6
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="min-h-screen">
+      <section className='h-screen w-full gap-3 relative'>
+        <Slider />
+      </section>
+      <section className='px-8 py-11'>
+        <Work />
+      </section>
+      <section className='brand-bg px-8 py-11'>
+        <Trust />
+      </section>
+      <section className='px-8 py-11'>
+        <Clients />
+      </section>
+      <section className='bg-yellow px-8 py-11'>
+        <Services />
+      </section>
+      <section>
+        <PrAndMedia />
+      </section>
+      <section>
+        <About />
+      </section>
+      <section>
+        <Contact />
+      </section>
+      <section>
+        <NewsBlogs />
+      </section>
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
+
         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
           <a
             className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
