@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Phudu:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600&display=swap");
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -34,6 +33,7 @@ body {
   .brand-bg {
     background: linear-gradient(180deg, #f60 0%, #dd240a 100%);
   }
+
 
   .dialog_bg {
     background-image: url('./../../public/bg.jpg');
@@ -122,7 +122,6 @@ body {
   }
 
   .white-shadow {
-
     text-shadow: 2px 2px #F75603, 3px 3px #ffffff;
   }
 
@@ -155,7 +154,7 @@ body {
     background: #F75603;
   }
 
-  .bg-yellow{
+  .bg-yellow {
     background: #FFCC01;
   }
 
@@ -171,5 +170,63 @@ body {
 
   .bg-creamy {
     background: #FFE39B;
+  }
+
+  .bg-service-yellow {
+    border-radius: 40px;
+    background: #FFCC01;
+  }
+
+  .text-zeus {
+    color: #2C2620;
+    font-family: Phudu;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+
+  .text-serv {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: Phudu;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+
+  .service-text {
+    color: #2C2620;
+    text-align: center;
+    font-family: Urbanist;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .services-text {
+    color: #4E240E;
+    font-family: Urbanist;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 54px;
+    text-align: justify;
+  }
+
+  .bg-industry {
+    background: #4E240E;
+  }
+
+  .industry-head {
+    color: #F75603;
+    font-family: Phudu;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-shadow: 2px 2px #4E240E, 3px 3px #F75603;
   }
 }

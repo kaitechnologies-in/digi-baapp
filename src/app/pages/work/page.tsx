@@ -1,7 +1,4 @@
 import Image from 'next/image';
-// http://digibaapp.com/cpanel
-// Username: digibxyn 
-// Password: S2nA9Bi1^7#6
 export default function Work() {
   return (
     <div className='bg-white px-8 pb-4 pt-32'>

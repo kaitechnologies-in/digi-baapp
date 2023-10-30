@@ -27,7 +27,7 @@ export default function Navbar() {
     <nav className="py-3 w-full bg-white shadow fixed top-0 z-[100] opacity-90">
       <div className="justify-between px-8 mx-auto lg:items-center md:items-center">
         <div className="flex items-center justify-between py-2 lg:py-2 md:py-2">
-          <a href="#" className="">
+          <a href="/" className="">
             <div className="avatar">
               <div className="rounded">
                 <Image

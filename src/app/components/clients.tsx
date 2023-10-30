@@ -2,9 +2,6 @@
 
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-// http://digibaapp.com/cpanel
-// Username: digibxyn 
-// Password: S2nA9Bi1^7#6
 export default function Clients() {
   const router = useRouter()
   return (
@@ -28,7 +25,7 @@ export default function Clients() {
         </div>
       </div>
       <div>
-        <button className="phudu-font view-project text-5xl text-orange border-solid border border-orange rounded-3xl py-4 px-12 h-auto  text-center hover:text-white hover:bg-orange max-w-3xl sm:max-w-full" onClick={() => router.push('/clients')}>View all Clients</button>
+        <button className="phudu-font view-project text-5xl text-orange border-solid border border-orange rounded-3xl py-4 px-12 h-auto  text-center hover:text-white hover:bg-orange max-w-3xl sm:max-w-full" onClick={() => router.push('/pages/clients')}>View all Clients</button>
       </div>
     </div>
   )

@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Work from './components/work'
 import Services from './components/services'
 import PrAndMedia from './components/pr_media'
@@ -8,6 +7,7 @@ import NewsBlogs from './components/news_blogs'
 import Slider from './components/slider'
 import Trust from './components/trust'
 import Clients from './components/clients'
+import Industries from './components/industries'
 export default function Home() {
   return (
     <main className="min-h-screen">
@@ -23,10 +23,13 @@ export default function Home() {
       <section className='px-8 py-11'>
         <Clients />
       </section>
-      <section className='bg-yellow px-8 py-11'>
+      <section className='bg-yellow px-8 py-11 pb-32'>
         <Services />
       </section>
-      {/* <section>
+      <section className='bg-industry px-8 py-11 pb-32'>
+        <Industries />
+      </section>
+      <section>
         <PrAndMedia />
       </section>
       <section>
@@ -37,8 +40,8 @@ export default function Home() {
       </section>
       <section>
         <NewsBlogs />
-      </section> */}
-      
+      </section>
+
     </main>
   )
 }
