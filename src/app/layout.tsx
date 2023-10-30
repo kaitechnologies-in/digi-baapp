@@ -5,7 +5,7 @@ import Loader from './components/loader'
 import { Suspense } from 'react'
 import Footer from './components/footer'
 import React from 'react'
-import { Phudu } from '@next/font/google';
+import { Phudu } from "next/font/google";
 export const metadata: Metadata = {
   title: 'DigiBaapp',
   description: '',
